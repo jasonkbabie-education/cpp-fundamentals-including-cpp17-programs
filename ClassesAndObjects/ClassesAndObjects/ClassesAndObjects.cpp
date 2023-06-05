@@ -3,16 +3,22 @@
 
 #include <iostream>
 #include "Person.h"
+#include "Twitter.h"
+#include "status.h"
+using std::cout;
+using std::endl;
+
 
 int main()
 {
 	Person p1("Jason K. ", "Babie", 13);
 	{
-		Person p2;
+		Twitter t1("Kate", "Gregory", 456, "@kategregory");
 	}
-	
-	std::cout << "after inner most block" << std::endl;
-	std::string name = p1.getName();
+	cout << "after innermost block" << endl;
+	cout << "p1: " << p1.getName() << " " << p1.GetNumber() << endl;
+	p1.SetNumber(123);
+	cout << "p1: " << p1.getName() << " " << p1.GetNumber() << endl;
 
 	return 0;
 }

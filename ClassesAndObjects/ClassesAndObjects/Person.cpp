@@ -6,8 +6,8 @@ using std::cout;
 using std::endl;
 using std::string;
 
-std::string Person::getName() {
-	return firstName + lastName;
+std::string Person::getName() const {
+	return firstName + " " + lastName;
 }
 
 Person::Person(string first, string last, int arbitrary) :
@@ -18,9 +18,9 @@ Person::Person(string first, string last, int arbitrary) :
 }
 
 Person::Person() : arbitraryNumber(0) {
-	cout << "constructing " << firstName << lastName << endl;
+	cout << "constructing " << getName() << endl;
 }
 
 Person::~Person() {
-	cout << "destructing " << firstName << " " << lastName << endl;
+	cout << "destructing " << getName() << endl;
 }

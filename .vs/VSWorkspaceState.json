@@ -1,6 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\ClassesAndObjects",
+    "\\ClassesAndObjects\\ClassesAndObjects"
   ],
+  "SelectedNode": "\\ClassesAndObjects\\ClassesAndObjects\\Status.h",
   "PreviewInSolutionExplorer": false
 }
