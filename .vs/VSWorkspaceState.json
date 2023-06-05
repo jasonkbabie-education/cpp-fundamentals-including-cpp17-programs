@@ -2,8 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\ClassesAndObjects",
-    "\\ClassesAndObjects\\ClassesAndObjects"
+    "\\ClassesAndObjects\\ClassesAndObjects",
+    "\\Templates"
   ],
-  "SelectedNode": "\\ClassesAndObjects\\ClassesAndObjects\\Status.h",
+  "SelectedNode": "\\Templates\\Templates.sln",
   "PreviewInSolutionExplorer": false
 }

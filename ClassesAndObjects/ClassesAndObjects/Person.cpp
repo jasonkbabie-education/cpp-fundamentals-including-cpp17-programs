@@ -14,15 +14,12 @@ Person::Person(string first, string last, int arbitrary) :
 	firstName(first),
 	lastName(last),
 	arbitraryNumber(arbitrary) {
-	cout << "constructing " << getName() << " " << endl;
 }
 
 Person::Person() : arbitraryNumber(0) {
-	cout << "constructing " << getName() << endl;
 }
 
 Person::~Person() {
-	cout << "destructing " << getName() << endl;
 }
 
 bool Person::operator<(Person const& p) const {
