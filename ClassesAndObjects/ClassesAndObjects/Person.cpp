@@ -24,3 +24,15 @@ Person::Person() : arbitraryNumber(0) {
 Person::~Person() {
 	cout << "destructing " << getName() << endl;
 }
+
+bool Person::operator<(Person const& p) const {
+	return arbitraryNumber < p.arbitraryNumber;
+}
+
+bool Person::operator<(int i) const {
+	return arbitraryNumber < i;
+}
+
+bool operator<(int i, Person const& p) {
+	return i < p.GetNumber();
+}

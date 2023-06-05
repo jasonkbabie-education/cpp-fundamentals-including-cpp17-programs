@@ -11,14 +11,27 @@ using std::endl;
 
 int main()
 {
-	Person p1("Jason K. ", "Babie", 13);
+	Person p1("Jason K.", "Babie", 123);
+	Person p2("Kate", "Gregory", 98);
+	cout << "p1 is ";
+	if (!(p1 < p2))
 	{
-		Twitter t1("Kate", "Gregory", 456, "@kategregory");
+		cout << "not ";
 	}
-	cout << "after innermost block" << endl;
-	cout << "p1: " << p1.getName() << " " << p1.GetNumber() << endl;
-	p1.SetNumber(123);
-	cout << "p1: " << p1.getName() << " " << p1.GetNumber() << endl;
+	cout << "less than p2" << endl;
 
+	cout << "p1 is ";
+	if (!(p1 < 300))
+	{
+		cout << "not ";
+	}
+	cout << "less than 300" << endl;
+	
+	cout << "300 is ";
+	if (!(300 < p1))
+	{
+		cout << "not ";
+	}
+	cout << "less than p1" << endl;
 	return 0;
 }
