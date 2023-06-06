@@ -18,18 +18,3 @@ Person::Person(string first, string last, int arbitrary) :
 
 Person::Person() : arbitraryNumber(0) {
 }
-
-Person::~Person() {
-}
-
-bool Person::operator<(Person const& p) const {
-	return arbitraryNumber < p.arbitraryNumber;
-}
-
-bool Person::operator<(int i) const {
-	return arbitraryNumber < i;
-}
-
-bool operator<(int i, Person const& p) {
-	return i < p.GetNumber();
-}

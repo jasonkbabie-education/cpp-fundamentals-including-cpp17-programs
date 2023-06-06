@@ -1,2 +1,9 @@
 ﻿  ClassesAndObjects.cpp
-  ClassesAndObjects.vcxproj -> C:\demo-projects\cpp-fundamentals-including-cpp17-programs\ClassesAndObjects\x64\Debug\ClassesAndObjects.exe
+  Resource.cpp
+  Generating Code...
+Twitter.obj : error LNK2005: "public: virtual class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > __cdecl Person::getName(void)const " (?getName@Person@@UEBA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ) already defined in Person.obj
+ClassesAndObjects.obj : error LNK2019: unresolved external symbol "public: __cdecl Twitter::~Twitter(void)" (??1Twitter@@QEAA@XZ) referenced in function main
+ClassesAndObjects.obj : error LNK2019: unresolved external symbol "public: __cdecl Resource::Resource(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)" (??0Resource@@QEAA@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z) referenced in function main
+ClassesAndObjects.obj : error LNK2019: unresolved external symbol "public: virtual __cdecl Resource::~Resource(void)" (??1Resource@@UEAA@XZ) referenced in function main
+Twitter.obj : error LNK2001: unresolved external symbol "public: virtual class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > __cdecl Twitter::getName(void)const " (?getName@Twitter@@UEBA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ)
+C:\demo-projects\cpp-fundamentals-including-cpp17-programs\ClassesAndObjects\x64\Debug\ClassesAndObjects.exe : fatal error LNK1120: 4 unresolved externals

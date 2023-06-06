@@ -130,11 +130,13 @@
     <ClCompile Include="Accum.cpp" />
     <ClCompile Include="ClassesAndObjects.cpp" />
     <ClCompile Include="Person.cpp" />
+    <ClCompile Include="Resource.cpp" />
     <ClCompile Include="Twitter.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Accum.h" />
     <ClInclude Include="Person.h" />
+    <ClInclude Include="Resource.h" />
     <ClInclude Include="Status.h" />
     <ClInclude Include="Twitter.h" />
   </ItemGroup>
