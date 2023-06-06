@@ -11,18 +11,36 @@ using std::cout;
 using std::endl;
 using std::string;
 
-template <class T>
-T max(T const& t1, T const& t2) {
-	return t1 > t2 ? t1 : t2;
+
+int DoubleIt(int const& i) {
+	return i * 2;
 }
 
 int main()
 {
-	Person start("", "", 0);
-	Accum<Person> people(0);
-	Person p1("Jason K.", "Babie", 97);
-	Person p2("Kate", "Gregory", 21);
-	people += p1;
-	people += p2;
-	cout << people.GetTotal() << endl;
+	int i = 3;
+	int const ci = 3;
+	i = 4;
+	int& ri = i;
+	ri = 5;
+	int const& cri = i;
+
+	int j = 10;
+	int doubleJ = DoubleIt(j);
+	int doubleTen = DoubleIt(10);
+
+	int* pI = &i;
+	//int* pII = &pI;
+	//pI = &Kate;
+
+	int const* pcI = pI;
+	//pcI = 4;
+	pcI = &j;
+	j = *pcI;
+
+	int* const cpI = pI;
+	*cpI = 4;
+	//cpI = &j;
+
+
 }
