@@ -18,29 +18,12 @@ int DoubleIt(int const& i) {
 
 int main()
 {
-	int i = 3;
-	int const ci = 3;
-	i = 4;
-	int& ri = i;
-	ri = 5;
-	int const& cri = i;
+	Person Kate("Kate", "Gregory", 456);
+	Person& rKate = Kate;
+	Person* pKate = &Kate;
 
-	int j = 10;
-	int doubleJ = DoubleIt(j);
-	int doubleTen = DoubleIt(10);
-
-	int* pI = &i;
-	//int* pII = &pI;
-	//pI = &Kate;
-
-	int const* pcI = pI;
-	//pcI = 4;
-	pcI = &j;
-	j = *pcI;
-
-	int* const cpI = pI;
-	*cpI = 4;
-	//cpI = &j;
-
-
+	Twitter KateGregcons("Kate", "Gregory", 567, "@gregons");
+	Person* pKateGregcons = &KateGregcons;
+	Person& rKateGregcons = KateGregcons;
+	Twitter& rKateGregcons = KateGregcons;
 }

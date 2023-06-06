@@ -10,5 +10,6 @@ private:
 
 public:
 	Twitter(std::string first, std::string last, int arbitrary, std::string handle);
+	std::string GetName() const;
 	~Twitter();
 };
